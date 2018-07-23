@@ -6,9 +6,7 @@ def oxford_comma(array)
    elsif array.size === 3
      return "#{array[0]}, #{array[1]}, and #{array[2]}"
    else
-     newArray = array.slice(0, (array.size - 1))
-     string = ''
-     string = newArray.concat(["and #{array[-1]}"]).toString()
+     newArray = array.slice(0, (array.size - 1)).concat(["and #{array[-1]}"])
 
      return string
    end
