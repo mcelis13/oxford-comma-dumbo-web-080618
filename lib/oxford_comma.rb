@@ -8,5 +8,6 @@ def oxford_comma(array)
    else
      newArray = array.slice(0, (array.size - 1))
      newArray.push('and').push(array[array.size -1])
+     return newArray
    end
 end
