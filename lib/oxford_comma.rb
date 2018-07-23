@@ -8,7 +8,7 @@ def oxford_comma(array)
    else
      newArray = array.slice(0, (array.size - 1))
      string = ''
-     string = newArray.concat(["and #{array[-1]}"])
+     string = newArray.concat(["and #{array[-1]}"]).toString()
 
      return string
    end
