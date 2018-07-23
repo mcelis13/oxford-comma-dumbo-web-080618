@@ -12,7 +12,7 @@ def oxford_comma(array)
        if index.includes?('and')
          string += "#{index}"
        else
-         string += index
+         string += "#{index}, "
        end
        }
      return string
