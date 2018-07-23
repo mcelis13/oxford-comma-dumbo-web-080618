@@ -8,6 +8,13 @@ def oxford_comma(array)
    else
      string = ''
      newArray = array.slice(0, (array.size - 1)).concat(["and #{array[-1]}"])
+     newArray.each{|index|
+       if index.includes?('and')
+         string += "#{index}"
+       else
+         string += index
+       end
+       }
      return string
    end
 end
