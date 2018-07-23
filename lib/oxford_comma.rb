@@ -9,7 +9,7 @@ def oxford_comma(array)
      newArray = array.slice(0, (array.size - 1))
      newArray.concat(["and #{array[-1]}"])
      string = ''
-     newArray.each{|index| string += " #{index}"}
+     newArray.each{|index| string += "#{index}, "}
      return string
    end
 end
