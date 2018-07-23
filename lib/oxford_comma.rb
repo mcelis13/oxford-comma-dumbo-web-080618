@@ -6,6 +6,6 @@ def oxford_comma(array)
    elsif array.size === 3
      return "#{array[0]}, #{array[1]}, and #{array[2]}"
    else
-     return array.split(' ')
+     return array.slice(0, (array.size - 1))
    end
 end
